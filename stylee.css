@@ -1,0 +1,464 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+  }
+ /* این قسمت به تمام بدنه زمینه ایی که ساختم استایل دادم */
+  body{
+    font-family:'',cursive ;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh ;
+    background-image: linear-gradient(to left bottom, #585557, #5b595c, #5e5c60, #616065, #63646a, #62656d, #60676f, #5e6971, #586971, #526a6f, #4d6a6c, #4a6a67);
+    }
+  /* این قسمت به زمین منچ استایل دادم */
+  .borad{
+    background-image: url(img/takhte.jpg);
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 1px 6px 9px #32346d;
+    
+  }
+  /* در این قسمت پلیرهای مورد نظر رو استایل دادیم که چگونه در کجای قسمت از زمین قرار بگیرند */
+  .player{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid;
+  }
+  .red{
+    top:10px ;
+    left: 10px;
+    background-color: red;
+  
+  }
+  .red2{
+    top:10px ;
+    left: 40px;
+    background-color: red;
+  
+  }
+  .red3{
+    top:40px ;
+    left: 10px;
+    background-color: red;
+  
+  }
+  .red4{
+    top:40px ;
+    left: 40px;
+    background-color: red;
+  
+  }
+  .red10{
+    bottom: 220px;
+    right: 367px;
+    background-color: red;
+  
+  }
+  .red6{
+    bottom:185px ;
+    right: 273px;
+    background-color: red;
+  
+  }
+  .red7{
+    bottom: 185px ;
+    right:  239px;
+    background-color: red;
+  
+  }
+  .red8{
+    bottom: 185px ;
+    right:  305px;
+    background-color: red;
+  
+  }
+  .red9{
+    bottom: 185px ;
+    right:  336px;
+    background-color: red;
+  
+  }
+  
+  .way{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: 2px solid;
+  }
+  
+  .yellow{
+    bottom: 150px;
+    right: 198px;
+    background-color: yellow;
+  
+  }
+  .yellow2{
+    bottom: 115px;
+    right: 198px;
+    background-color: yellow;
+  
+  }
+  .yellow3{
+    bottom: 80px;
+    right: 198px;
+    background-color: yellow;
+  
+  }
+  .yellow4{
+    bottom: 45px;
+    right: 198px;
+    background-color: yellow;
+  
+  }
+  .yellow10{
+    bottom: 10px;
+    right: 237px;
+    background-color: yellow;
+  
+  }
+  .yellow6{
+    bottom:10px ;
+    left: 10px;
+    background-color: yellow;
+  
+  }
+  .yellow7{
+    bottom:10px ;
+    left: 40px;
+    background-color: yellow;
+  
+  }
+  .yellow8{
+    bottom:40px ;
+    left: 10px;
+    background-color: yellow;
+  
+  }
+  .yellow9{
+    bottom:40px ;
+    left: 40px;
+    background-color: yellow;
+  
+  }
+  .green{
+    bottom:185px ;
+    left: 285px;
+    background-color: green;
+  
+  }
+  .green2{
+    bottom:185px ;
+    left: 247px;
+    background-color: green;
+  
+  }
+  .green3{
+    bottom:185px ;
+    left: 211px;
+    background-color: green;
+  
+  }
+  .green4{
+    bottom:185px ;
+    left: 321px;
+    background-color: green;
+  
+  }
+  .green10{
+    bottom: 150px;
+    left: 358px;
+    background-color: green;
+  }
+  
+  .green6{
+    bottom:10px ;
+    right:10px;
+    background-color: green;
+  
+  }
+  .green7{
+    bottom:10px ;
+    right: 40px;
+    background-color: green;
+  
+  }
+  .green8{
+    bottom:40px ;
+    right:  10px;
+    background-color: green;
+  
+  }
+  .green9{
+    bottom:40px ;
+    right:  40px;
+    background-color: green;
+  
+  }
+  .blue{
+    top: 10px;
+    right: 10px;
+    background-color: blue;
+  }
+  .blue2{
+    top: 10px;
+    right: 40px;
+    background-color: blue;
+  }
+  .blue3{
+    top: 40px;
+    right: 10px;
+    background-color: blue;
+  }
+  .blue4{
+    top: 40px;
+    right: 40px;
+    background-color: blue;
+  }
+  .blue10{
+    top: 10px;
+    right: 160px;
+    background-color: blue;
+  }
+  .blue6{
+    top: 150px;
+    right: 198px;
+    background-color: blue;
+  }
+  .blue7{
+    top: 115px;
+    right: 198px;
+    background-color: blue;
+  }
+  .blue8{
+    top: 80px;
+    right: 198px;
+    background-color: blue;
+  }
+  .blue9{
+    top: 45px;
+    right: 198px;
+    background-color: blue;
+  }
+  
+  
+  .white1{
+    bottom: 10px;
+    right: 198px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white2{
+    bottom: 10px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white3{
+    bottom: 45px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white4{
+    bottom: 45px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white5{
+    bottom: 79px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white6{
+    bottom: 114px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white7{
+    bottom: 79px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white8{
+    bottom: 114px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white9{
+    bottom: 150px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white10{
+    bottom: 150px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white11{
+    bottom: 150px;
+    right: 273px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white12{
+    bottom: 150px;
+    right: 305px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white13{
+    bottom: 150px;
+    right: 337px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white14{
+    bottom: 150px;
+    right: 367px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white15{
+    bottom: 184px;
+    right: 367px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white16{
+    bottom: 220px;
+    right: 337px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white17{
+    bottom: 220px;
+    right: 305px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white18{
+    bottom: 220px;
+    right: 273px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white19{
+    bottom: 220px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white20{
+    bottom: 255px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white21{
+    bottom: 290px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white22{
+    bottom: 326px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white23{
+    bottom: 361px;
+    right: 237px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white24{
+    top: 10px;
+    right: 198px;
+    background-color: rgb(255, 255, 255);
+  
+  }
+  .white25{
+    top: 45px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white26{
+    top: 79px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white27{
+    top: 114px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white28{
+    top: 150px;
+    right: 160px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white29{
+    bottom: 220px;
+    left: 247px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white30{
+    bottom: 220px;
+    left: 284px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white31{
+    bottom: 220px;
+    left: 321px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white32{
+    bottom: 220px;
+    left: 358px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white33{
+    bottom: 185px;
+    left: 358px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white34{
+    bottom: 150px;
+    left: 321px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white34{
+    bottom: 150px;
+    left: 285px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white35{
+    bottom: 150px;
+    left: 247px;
+    background-color: rgb(255, 255, 255);
+  }
+  .white36{
+    bottom: 150px;
+    left: 321px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  
